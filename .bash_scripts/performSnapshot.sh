@@ -32,6 +32,8 @@ performSnapshot() {
       lz4 -c -d "$filename" | pv | tar -x -C "$DAEMON_HOME"
     elif [[ "$extension" == "gz" ]]; then
       pv "$filename" | tar -xzf - -C "$DAEMON_HOME"
+    elif [[ "$extension" == "tar" ]]; then
+      pv "$filename" | tar -xf - -C "$DAEMON_HOME"
     else
       echo "Unsupported file extension: $extension"
       return
