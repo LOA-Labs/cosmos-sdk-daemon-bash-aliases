@@ -23,5 +23,3 @@ upBinary() {
   # Clean up environment
   unset version
 }
-
-upBinary
