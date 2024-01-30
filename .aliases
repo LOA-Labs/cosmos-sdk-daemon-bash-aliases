@@ -181,5 +181,5 @@ fi
 
 df -h
 
-echo "=== ${DAEMON_NAME} aliases loaded v0.1.20 ==="
+echo "=== ${DAEMON_NAME} aliases loaded v0.1.21 ==="
 
